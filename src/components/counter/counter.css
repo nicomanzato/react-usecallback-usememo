@@ -1,0 +1,32 @@
+.counter {
+  padding: 16px;
+  background-color: aliceblue;
+  flex: 1;
+  margin: 0 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter__value {
+  color: black;
+  font-size: 20px;
+}
+
+.counter__button {
+  width: 40px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin: 12px 0 0 0;
+}
+
+.counter__renders {
+  width: 40px;
+  color: grey;
+  margin: 12px 0 0 0;
+  display: flex;
+}
