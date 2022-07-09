@@ -5,5 +5,5 @@ import { Counter2Screen } from './screens/counter2/counter2.screen';
 import { Counter3Screen } from './screens/counter3/counter3.screen';
 
 export default function App() {
-  return <Counter3Screen />;
+  return <Counter1Screen />;
 }
