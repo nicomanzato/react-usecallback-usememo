@@ -27,9 +27,10 @@ export const Counter3Screen = () => {
 
     Okey ..., pero por que no usar useEffect en lugar de useMemo?
 
-    Sucede que useEffect se ejecuta luego de que la vista se renderice por primera vez, en 
-    cambio useMemo se ejecuta antes de que la vista se renderice por lo que si necesitamos
-    el valor antes de retornar la vista debemos usar useMemo.
+    Sucede que useEffect se ejecuta luego de que la vista se renderice
+    por primera vez, en cambio useMemo se ejecuta antes de que la vista
+    se renderice por lo que si necesitamos el valor antes de retornar
+    la vista debemos usar useMemo.
   
   */
 
