@@ -9,11 +9,14 @@ export const Counter1Screen = () => {
     haciendo click en el boton de +
 
     Que pasa si le agregamos React.memo al Componente Counter?
+  */
+
+  /*
 
     Usando React Memo, seguimos viendo la misma cantidad de renders que sin tenerlo,
     entonces que hacemos?
 
-    Prueba extra: probar que sucede si en lugar de 3 counter tenemos 20.
+    Extra: probar que sucede si en lugar de 3 counter tenemos 20.
   
   */
 

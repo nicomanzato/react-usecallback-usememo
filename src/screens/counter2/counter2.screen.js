@@ -18,7 +18,7 @@ export const Counter2Screen = () => {
     Solucion: useCallback
 
     Usando useCallback generamos una sola vez la funcion a menos que las dependencias que definamos
-    hayan variado, es este caso podemos usar value1 como dependencia y solo crear una nueva funcion
+    hayan variado, en este caso podemos usar value1 como dependencia y solo crear una nueva funcion
     cuando este cambie.
   
   */

@@ -10,14 +10,20 @@ import { Counter } from './../../components/counter/counter';
 export const Counter3Screen = () => {
   /*
 
-    Genial, nuestro componente ahora solo se vuelve a renderizar si alguno de sus props cambio,
-    pero que sucede si tenemos una operacion que es todavia muy costosa para ejecutarse en
-    cada render y solo necesitamos que se ejecute cuando el segundo contador cambia de valor?
+    Genial, nuestro componente ahora solo se vuelve a renderizar
+    si alguno de sus props cambio teniendo en cuenta tambien a
+    nuestros callbacks, pero que sucede si tenemos una operacion que 
+    es todavia muy costosa para ejecutarse en cada render y solo 
+    necesitamos que se ejecute cuando el segundo contador cambia de valor?
 
-    En este caso podemos utilizar useMemo o useEffect:
+    useMemo: permite que pasemos una funcion como parametro, seguida
+    de una lista de dependencias. En este caso podriamos usar value2
+    como dependencia y que useMemo se encargue de ejecutar nuevamente
+    solo cuando value2 cambie.
+  
+  */
 
-    useMemo: permite que pasemos una funcion como parametro, seguida de una lista de
-    dependencias. En este caso podriamos usar value2 como dependencia y que useMemo se encargue de ejecutar nuevamente solo cuando value2 cambie.
+  /*
 
     Okey ..., pero por que no usar useEffect en lugar de useMemo?
 
@@ -42,11 +48,11 @@ export const Counter3Screen = () => {
 
   /*
   
-  const [anotherExpensiveValue, setAnotherExpensiveValue] = useState(0);
+    const [anotherExpensiveValue, setAnotherExpensiveValue] = useState(0);
 
-  useEffect(() => {
-    setAnotherExpensiveValue(ExpensiveOperation(0));
-  }, []);
+    useEffect(() => {
+      setAnotherExpensiveValue(ExpensiveOperation(0));
+    }, []);
   
   */
 
