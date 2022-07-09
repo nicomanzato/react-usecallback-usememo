@@ -4,22 +4,24 @@ import { Counter } from './../../components/counter/counter';
 export const Counter2Screen = () => {
   /*
 
-    React memo nos permite que nuestro componente wrappeado solo se renderise nuevamente si
-    alguna de las props cambio, pero por que se sigue renderizando si el contador de los counter
-    no cambio?
+    React memo nos permite que nuestro componente wrappeado solo se
+    renderise nuevamente si alguna de las props cambio, pero por que
+    se sigue renderizando si el contador de los counter no cambio?
 
     Respuesta: cada vez que ejecutamos:
     
     () => setValue1(value1 + 1), [value1]) 
     
-    por mas que la funcion haga lo mismo en cada render, se genera una nueva referencia de esa
-    funcion ya que al fin y al cabo es una nueva funcion que se genera que hace lo mismo que antes.
+    por mas que la funcion haga lo mismo en cada render, se genera
+    una nueva referencia de esa funcion ya que al fin y al cabo es
+    una nueva funcion que se genera que hace lo mismo que antes.
 
     Solucion: useCallback
 
-    Usando useCallback generamos una sola vez la funcion a menos que las dependencias que definamos
-    hayan variado, en este caso podemos usar value1 como dependencia y solo crear una nueva funcion
-    cuando este cambie.
+    Usando useCallback generamos una sola vez la funcion a menos que
+    las dependencias que definamos hayan variado, en este caso podemos
+    usar value1 como dependencia y solo crear una nueva funcion cuando
+    este cambie.
   
   */
 

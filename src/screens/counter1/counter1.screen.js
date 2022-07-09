@@ -4,8 +4,9 @@ import { Counter } from './../../components/counter/counter';
 export const Counter1Screen = () => {
   /*
 
-    Estado inicial: Ante cada cambio tenemos que recalcular todo el componente ya que no sabemos
-    como se deberia mostrar cada componente por dentro y ante el cambio que acabamos de hacer 
+    Estado inicial: Ante cada cambio tenemos que recalcular todo el
+    componente ya que no sabemos como se deberia mostrar cada
+    componente por dentro y ante el cambio que acabamos de hacer 
     haciendo click en el boton de +
 
     Que pasa si le agregamos React.memo al Componente Counter?
@@ -13,8 +14,8 @@ export const Counter1Screen = () => {
 
   /*
 
-    Usando React Memo, seguimos viendo la misma cantidad de renders que sin tenerlo,
-    entonces que hacemos?
+    Usando React Memo seguimos viendo la misma cantidad de
+    renders que sin tenerlo, entonces que hacemos?
 
     Extra: probar que sucede si en lugar de 3 counter tenemos 20.
   
