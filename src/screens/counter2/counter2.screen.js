@@ -22,7 +22,11 @@ export const Counter2Screen = () => {
     las dependencias que definamos hayan variado, en este caso podemos
     usar value1 como dependencia y solo crear una nueva funcion cuando
     este cambie.
-  
+
+    Extra: Utilizar exhaustive-deps de eslint-plugin-react-hooks para
+    configurar el linter para que sugiera las dependencas en caso de 
+    que falten.
+
   */
 
   const [value1, setValue1] = useState(0);
